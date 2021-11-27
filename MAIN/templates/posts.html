@@ -66,7 +66,7 @@
         <!--Pagination starts-->
             {% if posts.is_paginated %}
                 <div class="pagination">
-                    pages: {% for num_page in posts.paginator.page_range %} <a href="?page={{num_page}}">{{num_page}}</a> {% endfor %}
+                    Pages: {% for num_page in posts.paginator.page_range %} <a href="?page={{num_page}}">{{num_page}}</a> {% endfor %}
                 </div>
             {% endif %}
         <!--pagination ends-->

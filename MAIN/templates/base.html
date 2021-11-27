@@ -28,15 +28,15 @@
                     {% endif %}
                 </ul>
             </nav>
-            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
-            <div class="brand">My Forum</div>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i style="color: #8550A2;" class="fa fa-bars"></i></a>
+            <div class="brand">Engage Forum</div>
             {% if user.is_authenticated %}
-            <div style="font-size:50px;font-weight:300px;margin-left:100px;"><a href="{% url 'create_post' %}">+</a></div>
+            <div style="font-size:50px;font-weight:300px;margin-left:100px;"><a href="{% url 'create_post' %}"><span style="color: #8550A2;">+</span></a></div>
             {% endif %}
         </div>
         <!--SearchBox Section-->
         <form action="{% url 'search_result' %}" role="form" method="GET">
-        <div class="search-box">
+        <div  class="search-box">
             <div>
                 <select name="search-box" id="">
                     <option value="Everything">Everything</option>
@@ -52,7 +52,7 @@
     {% block content %}
     {% endblock content %}
     <footer>
-        <span>&copy;  Selmi Abderrahim | All Rights Reserved</span>
+        <span>&copy; Payal Yadav </span>
     </footer>
     <script src="{% static 'main.js' %}"></script>
 </body>
